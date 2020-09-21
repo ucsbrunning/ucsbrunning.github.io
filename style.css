@@ -18,7 +18,7 @@ div.title {
     text-align: center;
     top: 40vh;
     font-family: Blackout-Midnight;
-    font-size: 700%;
+    font-size: 900%;
 }
 
 div.ComingSoon {
@@ -51,9 +51,10 @@ iframe {
 }
 
 span.Running {
-    font-family: Blackout-2am;
-    color: #34A6FF;
-    background-color: #FFFFFF;
+    font-family: Blackout-Midnight;
+    background-color: #34A6FF;
+    color: #FFFFFF;
+    padding-left: 10px;
 }
 
 ul.menu {
