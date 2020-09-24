@@ -60,6 +60,18 @@ div.container {
     font-size: 400%;
 }
 
+div.links {
+    background-color: #D8D8D8;
+    color: #4B4B4B;
+    text-decoration: none;
+    padding: 60px;
+}
+
+div.links a:hover {
+    color: black;
+    font-size: 105%;
+}
+
 div.container p {
     padding-top: 80px;
 }
