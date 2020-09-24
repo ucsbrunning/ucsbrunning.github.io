@@ -2,45 +2,66 @@
 @font-face { font-family: Blackout-Midnight; src: url('Blackout-Midnight.ttf'); } 
 
 body {
-    background-image: url('background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    background-position: center;
     color: #1F355B;
     font-size: 125%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div.title {
-    position: relative;
-    text-align: center;
-    top: 40vh;
-    font-family: Blackout-Midnight;
-    font-size: 900%;
+ul.menu {
+    z-index: 1;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
 }
 
-div.ComingSoon {
+li a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+div.containerTitle {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     text-align: center;
-    top: 40vh;
+    font-family: Blackout-Midnight;
+    font-size: 900%;
+    height: 75vh;
+    top: 80px;
+}
+
+div.UCSBRUNNING {
+    position: relative;
+    top: 35vh;
+}
+
+span.Running {
+    background-color: #34A6FF;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+div.container {
+    position: relative;
+    text-align: center;
     font-family: Blackout-Midnight;
     font-size: 400%;
 }
 
-div.Title {
-    position: relative;
-    text-align: center;
-    top: 5vh;
-    font-family: Blackout-Midnight;
-    font-size: 300%;
-}
-
-div.typeform-widget {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+div.container p {
+    padding-top: 80px;
 }
 
 iframe {
@@ -48,32 +69,6 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
-}
-
-span.Running {
-    font-family: Blackout-Midnight;
-    background-color: #34A6FF;
-    color: #FFFFFF;
-    padding-left: 10px;
-}
-
-ul.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background-color: white;
-}
-
-li {
-    float: left;
-}
-  
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
 }
 
 a:link {
@@ -105,10 +100,6 @@ a.team:hover {
 }
 
 a.practices:hover {
-    color: #34A6FF;
-}
-
-a.gallery:hover {
     color: #34A6FF;
 }
 
