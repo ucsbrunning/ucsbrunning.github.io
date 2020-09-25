@@ -17,7 +17,7 @@ ul.menu {
     margin: 0;
     padding: 10px;
     overflow: hidden;
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
 }
 
@@ -39,7 +39,7 @@ div.containerTitle {
     font-family: Blackout-Midnight;
     font-size: 900%;
     height: 75vh;
-    top: 80px;
+    top: 70px;
 }
 
 div.UCSBRUNNING {
@@ -117,4 +117,25 @@ a.practices:hover {
 
 a.racecalendar:hover {
     color: #34A6FF;
+}
+
+div.icons a {
+    text-decoration: none;
+    margin: 30px;
+    font-size: 0;
+}
+
+a.facebook {
+    padding: 0;
+    margin: 0;
+}
+
+a.instagram {
+    padding: 0;
+    margin: 0;
+}
+
+a.gmail {
+    padding: 0;
+    margin: 0;
 }
