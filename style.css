@@ -2,45 +2,173 @@
 @font-face { font-family: Blackout-Midnight; src: url('Blackout-Midnight.ttf'); } 
 
 body {
-    background-image: url('background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-    background-position: center;
     color: #1F355B;
     font-size: 125%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div.title {
-    position: relative;
-    text-align: center;
-    top: 40vh;
-    font-family: Blackout-Midnight;
-    font-size: 900%;
+ul.menu {
+    z-index: 1;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 100%;
 }
 
-div.ComingSoon {
+li a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+div.containerTitle {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     text-align: center;
-    top: 40vh;
+    font-family: Blackout-Midnight;
+    font-size: 900%;
+    height: 75vh;
+    top: 70px;
+}
+
+div.UCSBRUNNING {
+    position: relative;
+    top: 35vh;
+}
+
+span.Running {
+    background-color: #34A6FF;
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+div.container {
+    position: relative;
+    text-align: center;
     font-family: Blackout-Midnight;
     font-size: 400%;
 }
 
-div.Title {
-    position: relative;
-    text-align: center;
-    top: 5vh;
-    font-family: Blackout-Midnight;
-    font-size: 300%;
+.item1 { 
+    grid-area: topleft;
+    background-image: url('card1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 700px;
+}
+.item2 { 
+    grid-area: topright; 
+    background-image: url('card2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 700px;
+}
+.item3 { 
+    grid-area: botleft; 
+    background-image: url('card3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 700px;
+}
+.item4 { 
+    grid-area: botright; 
+    background-image: url('card4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 700px;
 }
 
-div.typeform-widget {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'topleft topright'
+      'botleft botright';
+}
+
+.picture {
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+.name {
+    position: relative;
+    top: -10px;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40%;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+}
+
+.title {
+    font-size: 50%;
+}
+
+.bio {
+    font-size: 35%;
+    line-height: 1px;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.twocolumn {
+    display: grid;
+    grid-template-areas:
+      'left right';
+}
+
+div.column {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.column p {
+    margin: 0;
+    padding: 10px;
+    position:absolute;
+    left:0;
+    bottom:0;   
+}
+
+div.links {
+    background-color: #D8D8D8;
+    color: #4B4B4B;
+    text-decoration: none;
+    padding: 60px;
+}
+
+div.links a:hover {
+    color: black;
+    font-size: 105%;
+}
+
+div.container p {
+    padding-top: 80px;
 }
 
 iframe {
@@ -48,32 +176,6 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
-}
-
-span.Running {
-    font-family: Blackout-Midnight;
-    background-color: #34A6FF;
-    color: #FFFFFF;
-    padding-left: 10px;
-}
-
-ul.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background-color: white;
-}
-
-li {
-    float: left;
-}
-  
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
 }
 
 a:link {
@@ -108,10 +210,27 @@ a.practices:hover {
     color: #34A6FF;
 }
 
-a.gallery:hover {
+a.racecalendar:hover {
     color: #34A6FF;
 }
 
-a.racecalendar:hover {
-    color: #34A6FF;
+div.icons a {
+    text-decoration: none;
+    margin: 30px;
+    font-size: 0;
+}
+
+a.facebook {
+    padding: 0;
+    margin: 0;
+}
+
+a.instagram {
+    padding: 0;
+    margin: 0;
+}
+
+a.gmail {
+    padding: 0;
+    margin: 0;
 }
