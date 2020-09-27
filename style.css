@@ -122,6 +122,11 @@ div.container {
     font-size: 50%;
 }
 
+.bio {
+    font-size: 35%;
+    line-height: 1px;
+}
+
 .left {
     grid-area: left;
 }
