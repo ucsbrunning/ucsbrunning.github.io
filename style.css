@@ -60,6 +60,96 @@ div.container {
     font-size: 400%;
 }
 
+.item1 { 
+    grid-area: topleft;
+    background-image: url('card1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 700px;
+}
+.item2 { 
+    grid-area: topright; 
+    background-image: url('card2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 700px;
+}
+.item3 { 
+    grid-area: botleft; 
+    background-image: url('card3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 700px;
+}
+.item4 { 
+    grid-area: botright; 
+    background-image: url('card4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 700px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'topleft topright'
+      'botleft botright';
+}
+
+.picture {
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+.name {
+    position: relative;
+    top: -10px;
+    text-align: left;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40%;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+}
+
+.title {
+    font-size: 50%;
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+.twocolumn {
+    display: grid;
+    grid-template-areas:
+      'left right';
+}
+
+div.column {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.column p {
+    margin: 0;
+    padding: 10px;
+    position:absolute;
+    left:0;
+    bottom:0;   
+}
+
 div.links {
     background-color: #D8D8D8;
     color: #4B4B4B;
