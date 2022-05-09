@@ -60,6 +60,11 @@ div.container {
     font-size: 400%;
 }
 
+.left{
+    height: 100%;
+    width: 25%;
+}
+
 .item1 { 
     grid-area: topleft;
     background-image: url('card1.png');

@@ -42,5 +42,54 @@ var data = {
             "intro":"Hi! My name is Alicia and I’m currently a second year who’s undeclared for my major. I’ve been running for about three years and joined running club at the beginning of my second year. I love running because it’s a great stress reliever for me and joined running club as it was a great way for me to meet people starting my second year of college as my first year was completely online due to the COVID-19 pandemic. Outside of running, I like playing other sports such as soccer and basketball. I can’t wait to meet you all and go for a run!"
         }
     ]
-
 }
+
+function fillOfficerGrid(officerData){
+
+    let grid_container = document.getElementById('officer-grid');
+    console.log(grid_container)
+    let newItem = document.createElement("div");
+    // newItem.class = "item1";
+    newItem.classList.add("item1");
+    grid_container.appendChild(newItem);
+    let newTwoCol = document.createElement("div");
+    // newTwoCol.class = "twocolumn";
+    newTwoCol.classList.add("twocolumn");
+    newItem.appendChild(newTwoCol);
+    let newLeftCol = document.createElement("div");
+    newLeftCol.classList.add("left");
+    newTwoCol.appendChild(newLeftCol);
+    let officerImg = document.createElement("img");
+    officerImg.classList.add("picture");
+    officerImg.src = "assets/profiles/profile-pics/austin-mac.jpg";
+    newLeftCol.appendChild(officerImg);
+}
+
+fillOfficerGrid(data)
+console.log("Test1")
+
+
+{/* <div class="item1">
+                    <div class="twocolumn">
+                        <div class="left">
+                            <img class="picture" src="assets/profiles/caroline.JPG">
+                        </div>
+                        <div class="right">
+                            <p class="name">
+                                <b>Caroline Gee</b><br>
+                                <span class="title"><i>Co-President</i></span>
+                                <span class="bio">
+                                    <br>
+                                    Hey there! My name is Caroline and I’m a junior<br>
+                                    majoring in cell & developmental biology along with a<br>
+                                    slight detour into English. I absolutely love running<br>
+                                    up gigantic hills, especially if I can share the pain<br>
+                                    with other people 😊. I’m excited to expand running club<br>
+                                    and help cultivate a welcoming environment for runners<br>
+                                    of all backgrounds! I also (unfortunately) have quite a bit<br>
+                                    of experience with injuries, so if you ever want to chat<br>
+                                    about physical therapy or rehab, feel free to reach out!
+                                </span>
+                        </div>
+                    </div>
+                </div> */}
