@@ -59,56 +59,73 @@ div.container {
     font-family: Blackout-Midnight;
     font-size: 400%;
 }
-
-.item1 { 
-    grid-area: topleft;
+.background1{
     background-image: url('card1.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 350px;
-    width: 700px;
 }
-.item2 { 
-    grid-area: topright; 
+.background2{
     background-image: url('card2.png');
     background-repeat: no-repeat;
     background-position: center;
+}
+.background3{
+    background-image: url('card3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.background4{
+    background-image: url('card4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.item{ 
+    height: 350px;
+    width: 700px;
+}
+
+/* .item2 { 
+    grid-area: 2; 
     height: 350px;
     width: 700px;
 }
 .item3 { 
-    grid-area: botleft; 
-    background-image: url('card3.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    grid-area: 3; 
     height: 350px;
     width: 700px;
 }
 .item4 { 
-    grid-area: botright; 
-    background-image: url('card4.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    grid-area: 4; 
     height: 350px;
     width: 700px;
-}
+} */
 
 .grid-container {
     display: grid;
     grid-template-areas:
-      'topleft topright'
-      'botleft botright';
+      '1 2'
+      '3 4';
 }
+
+.grid-row{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
 
 .picture {
     position: relative;
+    /* height: 75%; */
+    /* width: 25%;  */
+    width: 220px;
+    height:220px;
     top: 60px;
-    left: 40px;
+    left: 40px; 
 }
 
 .name {
     position: relative;
-    top: -10px;
+    top: -35px; 
     left: 5px;
     text-align: left;
     color: white;
@@ -124,8 +141,10 @@ div.container {
 }
 
 .bio {
-    font-size: 35%;
-    line-height: 1px;
+    display: inline-block;
+    height: 200px;
+    width: 290px;
+    font-size: 32%;
 }
 
 .left {
